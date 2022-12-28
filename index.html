@@ -63,6 +63,83 @@
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <p>Zostaw swoje dane w formularzu poniżej</p>
+              <form class="inputs" autocomplete="on">
+                <div class="form-element" role="group" aria-labelledby="name">
+                  <label class="modal-label" for="first-name"> Imie </label>
+                  <div class="modal-wraper-foricon">
+                    <input
+                      type="text"
+                      name="first-name"
+                      required
+                      pattern="[A-Za-z ]{1,32}"
+                      minlength="3"
+                    />
+                    <svg class="modal-icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-person-black"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="form-element"
+                  role="group"
+                  aria-labelledby="phone-number"
+                >
+                  <label class="modal-label" for="phone-number">
+                    Telefon
+                  </label>
+                  <div class="modal-wraper-foricon">
+                    <input
+                      type="tel"
+                      name="phone-number"
+                      required
+                      pattern="[0-9 +]{1,32}"
+                      minlength="9"
+                    />
+                    <svg class="modal-icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-phone-black"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form-element" role="group" aria-labelledby="email">
+                  <label class="modal-label" for="email"> Email </label>
+                  <div class="modal-wraper-foricon">
+                    <input type="email" name="email" required />
+                    <svg class="modal-icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="form-element"
+                  role="group"
+                  aria-labelledby="text-area"
+                >
+                  <label class="modal-label" for="komentarz"> Komentarz </label>
+                  <textarea
+                    name="komentarz"
+                    rows="5"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
+                </div>
+                <div class="checkbox">
+                  <label class="custom-checkbox">
+                    <input
+                      class="custom-checkbox-input"
+                      type="checkbox"
+                      required
+                    />
+                    <svg width="16px" height="15px">
+                      <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+
+                    Oświadczam iż akceptuję
+                    <a class="modal-a" href="">Regulamin</a> i
+                    <a class="modal-a" href="">Politykę Prywatności.</a>
+                  </label>
+                </div>
+                <button class="form-button" type="submit">Wyślij</button>
+              </form>
             </div>
           </div>
         </div>
@@ -445,6 +522,30 @@
               </li>
             </ul>
           </div>
+
+          <form name="E-mail" autocomplete="on">
+            <div class="newsletter">
+              <div>
+                <p>Zapisz się do newslettera</p>
+                <label>
+                  <input
+                    class="input-newsletter"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    required
+                  />
+                </label>
+              </div>
+
+              <button class="button-submit" type="submit">
+                Zapisz się
+                <svg class="icon-send" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>

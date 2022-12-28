@@ -286,7 +286,6 @@
     </main>
     <footer>
       <div class="container">
-        <!--Kontakt-->
         <div class="footer-flex">
           <div>
             <a class="logo" href="index.html" style="text-decoration: none"
@@ -340,6 +339,30 @@
               </li>
             </ul>
           </div>
+
+          <form name="E-mail" autocomplete="on">
+            <div class="newsletter">
+              <div>
+                <p>Zapisz się do newslettera</p>
+                <label>
+                  <input
+                    class="input-newsletter"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                    required
+                  />
+                </label>
+              </div>
+
+              <button class="button-submit" type="submit">
+                Zapisz się
+                <svg class="icon-send" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
