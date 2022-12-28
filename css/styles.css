@@ -292,6 +292,9 @@ header {
   left: 12px;
   top: 11px;
 
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /*   top: 50%;
   left: 0;
   transform: translate(50%, -75%); */
@@ -344,7 +347,7 @@ textarea:focus {
   vertical-align: middle;
 }
 
-.custom-checkbox svg {
+.custom-checkbox-svg {
   position: absolute;
   border: 1px solid rgba(33, 33, 33, 1);
 
@@ -352,13 +355,17 @@ textarea:focus {
   left: 21px;
   opacity: 0;
   fill: var(--brand-white);
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.custom-checkbox input[type="checkbox"]:checked + svg {
-  opacity: 1;
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox-svg {
   background: var(--brand-blue);
   border: 1px solid var(--brand-blue);
   border-radius: 2px;
+  opacity: 1;
 }
 
 .modal-a {
