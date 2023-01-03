@@ -111,7 +111,7 @@
                   </div>
                 </div>
                 <div
-                  class="form-element"
+                  class="form-element-comment"
                   role="group"
                   aria-labelledby="text-area"
                 >
@@ -122,23 +122,23 @@
                     placeholder="Wprowadź tekst"
                   ></textarea>
                 </div>
-                <div class="checkbox">
-                  <label class="custom-checkbox">
-                    <input
-                      name="policy-accepted"
-                      class="custom-checkbox-input"
-                      type="checkbox"
-                      required
-                    />
-                    <svg class="custom-checkbox-svg" width="16px" height="15px">
-                      <use href="./images/icons.svg#icon-Vector"></use>
-                    </svg>
 
-                    Oświadczam iż akceptuję
-                    <a class="modal-a" href="">Regulamin</a> i
-                    <a class="modal-a" href="">Politykę Prywatności.</a>
-                  </label>
-                </div>
+                <label class="custom-checkbox">
+                  <input
+                    name="policy-accepted"
+                    class="custom-checkbox-input"
+                    type="checkbox"
+                    required
+                  />
+                  <svg class="custom-checkbox-svg" width="16px" height="15px">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+
+                  Oświadczam iż akceptuję
+                  <a class="modal-a" href="">Regulamin</a> i
+                  <a class="modal-a" href="">Politykę Prywatności.</a>
+                </label>
+
                 <button class="form-button" type="submit">Wyślij</button>
               </form>
             </div>
@@ -469,85 +469,81 @@
       </section>
     </main>
     <footer>
-      <div class="container">
-        <div class="footer-flex">
-          <div>
-            <a class="logo" href="index.html" style="text-decoration: none"
-              >Web<span class="logo-white">Studio </span></a
-            >
-            <address>
-              <ul>
-                <li>
-                  <a
-                    class="logo-white footer-ulli"
-                    href="https://goo.gl/maps/5soczE6bPuatjHQNA"
-                    target="_blank"
-                    >m. Warszawa, Aleje Jerozolimskie 21</a
-                  >
-                </li>
-                <li><a href="mailto:info@example.com">info@example.com</a></li>
-                <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-              </ul>
-            </address>
-          </div>
-          <div>
-            <p>Dołącz do nas</p>
-            <ul class="social-media">
+      <div class="container footer-flex">
+        <div>
+          <a class="logo" href="index.html" style="text-decoration: none"
+            >Web<span class="logo-white">Studio </span></a
+          >
+          <address>
+            <ul>
               <li>
-                <a href="" class="social-media-af">
-                  <svg class="social-media-icon" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-instagram-2"></use>
-                  </svg>
-                </a>
+                <a
+                  class="logo-white footer-ulli"
+                  href="https://goo.gl/maps/5soczE6bPuatjHQNA"
+                  target="_blank"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
               </li>
-              <li>
-                <a href="" class="social-media-af">
-                  <svg class="social-media-icon" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-twitter-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="" class="social-media-af">
-                  <svg class="social-media-icon" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook-1"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="" class="social-media-af">
-                  <svg class="social-media-icon" width="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                </a>
-              </li>
+              <li><a href="mailto:info@example.com">info@example.com</a></li>
+              <li><a href="tel:+48111111111">+48 111 111 111</a></li>
             </ul>
-          </div>
-
-          <form name="E-mail" autocomplete="on">
-            <div class="newsletter">
-              <div>
-                <p>Zapisz się do newslettera</p>
-                <label>
-                  <input
-                    class="input-newsletter"
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                  />
-                </label>
-              </div>
-
-              <button class="button-submit" type="submit">
-                Zapisz się
-                <svg class="icon-send" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+          </address>
         </div>
+        <div>
+          <p>Dołącz do nas</p>
+          <ul class="social-media">
+            <li>
+              <a href="" class="social-media-af">
+                <svg class="social-media-icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media-af">
+                <svg class="social-media-icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media-af">
+                <svg class="social-media-icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media-af">
+                <svg class="social-media-icon" width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form name="E-mail" autocomplete="on">
+          <div class="newsletter">
+            <label>
+              <p>Zapisz się do newslettera</p>
+              <input
+                class="input-newsletter"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+
+            <button class="button-submit" type="submit">
+              Zapisz się
+              <svg class="icon-send" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
